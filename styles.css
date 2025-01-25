@@ -1,0 +1,1111 @@
+/* Home Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo-image:hover {
+    transform: scale(1.1); /* Enlarges the image by 20% */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+html{
+    font-family: Poppins;
+    color: white;
+}
+
+body {
+    font-family: Poppins, serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 5px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    flex: 120px;
+}
+
+.logo-image {
+    height: 40px; /* Adjust logo size */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ab96ff;
+    font-size: 1rem;
+}
+
+/* Hero Section Styling */
+.hero {
+    position:relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-video {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the video covers the container */
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%); /* Pushes the content slightly below the video center */
+    text-align: center;
+}
+
+.hero-content h2 {
+    margin-bottom: 20px; /* Adds space between the heading and button */
+    font-size: 52px;
+    color: white;
+}
+
+.hero-content .hero-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    color: black;
+    background-color: #ab96ff;
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: white;
+    color: #ab96ff;
+    transform: scale(1.1);
+}
+
+.paragraph {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: Poppins, serif;
+    cursor: pointer;
+}
+/* Image Grid Styling */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 columns */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+  }
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    justify-content: center;
+  }
+
+.grid-item {
+    text-align: center; /* Center align the text under the image */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.grid-item img {
+    width: 70%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow effect */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.grid-item:hover img {
+    transform: scale(1.05); /* Zoom in on hover */
+}
+
+.image-info {
+    margin-top: 0.5rem;
+}
+
+.image-info h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 5px;
+    transition: color 0.3s;
+}
+
+.image-info p {
+    font-size: 1rem;
+    color: #9160d7;
+    transition: color 0.3s;
+}
+
+.grid-item:hover .image-info h3,
+.grid-item:hover .image-info p {
+    color: #AB96FF; /* Change text color on hover */
+}
+
+.additional-lists {
+    margin: 40px 20px;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.additional-lists h2,
+.additional-lists h3 {
+    color: #AB96FF;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.additional-lists ol,
+.additional-lists ul {
+    list-style-position: inside;
+    margin: 20px 40px;
+    padding: 0;
+}
+
+.additional-lists ol {
+    list-style-type: decimal;
+}
+
+.additional-lists ul {
+    list-style-type: disc;
+}
+
+.additional-lists li {
+    font-size: 1.2rem;
+    color: #6e5da8;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.additional-lists li:hover {
+    color: #ffffff;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation items on smaller screens */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Stack items on smaller screens */
+    }
+
+    .flex-container {
+        flex-direction: column; /* Stack upcoming games vertically */
+    }
+
+    .logo-image {
+        height: 40px; /* Adjust logo size for smaller screens */
+    }
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: Sora;
+    font-weight: bold;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Hover Effects for Titles */
+.hover-title {
+    color: #ab96ff;
+    transition: color 0.3s;
+}
+
+.hover-title:hover {
+    color: #ab96ff;
+}
+
+.footer-logo img {
+    height: 50px; /* Adjust logo size */
+  }
+  
+  .footer-logo p {
+    margin-bottom: 1rem;
+    font-size: 14px;
+    color: #d3d3d3; /* Subtle text color */
+  }
+  
+  .footer-links h4,
+  .footer-contact h4 {
+    font-size: 18px;
+    color: #AB96FF; /* Highlight heading */
+    margin-bottom: 10px;
+  }
+  
+
+
+/*Mobile view*/
+
+
+/* General Responsive Adjustments */
+body {
+    font-size: 16px; /* Ensure readable font size */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack menu items */
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    .logo-image {
+        height: 30px; /* Reduce logo size for smaller screens */
+    }
+}
+
+/* Hero Section for Mobile */
+@media (max-width: 768px) {
+    .hero-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%; /* Fit content within screen */
+    }
+
+    .hero-content h2 {
+        font-size: 32px; /* Smaller font for heading */
+    }
+
+    .hero-content .hero-button {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+}
+
+/* Adjust Paragraph Section */
+@media (max-width: 768px) {
+    .paragraph {
+        padding: 20px;
+        font-size: 16px;
+    }
+}
+
+/* Image Grid Responsiveness */
+@media (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: 1fr; /* Stack images vertically */
+        gap: 15px; /* Adjust gap between items */
+    }
+
+    .grid-item img {
+        width: 90%; /* Reduce image size for smaller screens */
+        margin: 0 auto; /* Center images */
+    }
+}
+
+/* Footer Adjustments */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stack footer sections */
+        text-align: center;
+    }
+
+    .footer-logo,
+    .footer-links,
+    .footer-contact {
+        margin-bottom: 20px;
+    }
+
+    .footer-logo img {
+        height: 40px; /* Reduce logo size */
+    }
+
+    .footer-links h4,
+    .footer-contact h4 {
+        font-size: 16px; /* Adjust heading sizes */
+    }
+}
+
+
+
+/* about us Content Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Poppins;
+    color: white;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 10px 20px;
+}
+
+body {
+    font-family: Poppins, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 18px;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+    text-align: center;
+    box-sizing: border-box;
+}
+main {
+    padding: 20px;
+}
+
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+#nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Responsive Styles */
+
+    #nav-links {
+        display: none; /* Hide nav links by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #000;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    #nav-links.show {
+        display: flex; /* Show links when toggled */
+    }
+
+    #nav-links li {
+        margin: 10px 0;
+    }
+
+
+
+.about-section img:hover {
+    transform: scale(1.1); /* Enlarges the image by 20% */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+
+.about-section, .branches, .branch-summary {
+    margin-bottom: 40px;
+    font-family: Poppins, serif;
+    font-size: 18px;
+}
+
+h3 {
+    color: #AB96FF;
+}
+/* Hover effect for h3 (main titles) */
+h3:hover {
+    color: #FFFFFF; /* Change to white on hover */
+    text-shadow: 0px 0px 8px #AB96FF; /* Add a glowing effect */
+    cursor: pointer;
+}
+
+h2 {
+    color: #AB96FF;
+}
+/* Hover effect for h3 (main titles) */
+h2:hover {
+    transform: scale(1.1); /* Enlarges the image by 20% */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+    cursor: pointer;
+}
+.branch-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.branch img{
+    border-radius: 8px;
+}
+
+.branch img:hover {
+    transform: scale(1.1); /* Enlarges the image by 20% */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+    max-width: 100%; /* Scale to fit parent container */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px 0;
+
+}
+
+.branch iframe {
+    max-width: 100%; /* Scale to fit parent container */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+
+.branch iframe:hover {
+    transform: scale(1.1); /* Enlarges the image by 20% */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+
+table {
+    width: 80%; /* Reduce the table width */
+    margin: 20px auto; /* Center the table */
+    border-collapse: collapse; /* Remove extra spacing between borders */
+    
+}
+
+table th, table td {
+    border: 1px solid #AB96FF;
+    padding: 10px;
+    text-align: left;
+}
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 30px 15px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: Sora;
+    font-weight: bold;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Hover Effects for Titles */
+.hover-title {
+    color: #ab96ff;
+    transition: color 0.3s;
+}
+
+.hover-title:hover {
+    color: #ab96ff;
+}
+
+.footer-logo img {
+    height: 50px; /* Adjust logo size */
+  }
+  
+  .footer-logo p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #d3d3d3; /* Subtle text color */
+  }
+  
+  .footer-links h4,
+  .footer-contact h4 {
+    font-size: 18px;
+    color: #AB96FF; /* Highlight heading */
+    margin-bottom: 10px;
+  }
+
+/* Upcoming Games */
+/* Main Section */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.intro {
+    padding: 20px;
+    text-align: center;
+}
+
+
+.paragraph h1:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.paragraph p{
+    font-size: 18px;
+}
+
+.upcominggames-grid-container {
+    display: grid;
+    gap: 15px;
+    justify-content: center;
+}
+
+.upcominggames-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr)); 
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    grid-auto-rows: auto; /* Ensures the rows adapt based on content height */
+}
+
+.upcominggame-card {
+    width: 100%; /* Ensure the card width adapts to the grid layout */
+    max-width: 300px; /* Limit max width of each card */
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    padding: 10px;
+    transition: transform 0.3s;
+    background-color: black;
+    text-align: center;
+    position: relative; /* Positioning for the release date */
+    overflow: hidden; /* Ensures content doesn't overflow outside card */
+}
+
+.upcominggame-card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    cursor: pointer;
+}
+
+.upcominggame-card img {
+    width: 100%; /* Ensure image fits the card width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 250px; /* Limit maximum height for images */
+    object-fit: cover; /* Crop images if necessary */
+    align-items: center;
+}
+
+.release-date {
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.6s;
+    transform: translateY(25px);
+}
+
+.release-date {
+    font-size: 18px;
+}
+
+.upcominggame-card h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.upcominggame-card h3{
+    color: white
+}
+
+
+
+
+.upcominggame-card:hover .release-date {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Games page */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.intro {
+    padding: 20px;
+    text-align: center;
+}
+
+html{
+    font-family: Poppins;
+    color: white;
+}
+
+
+body {
+    font-family: Poppins, serif;
+    font-size: 18px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #000000;
+    color: #ffffff;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+    text-align: center;
+}
+
+.paragraph h1{
+    color: #AB96FF;
+}
+
+.paragraph h1:hover {
+    transform: scale(1.1);
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 30px;
+    padding: 100px;
+    justify-content: center;
+    grid-auto-rows: auto;
+    align-items: center;
+}
+.game-card img {
+    display: grid;
+    gap: 20px;
+    padding: 0px;
+    align-items: center;
+}
+
+
+
+.game-card {
+    width: 100%;
+    max-width: 300px; /* Ensures the card width is the same */
+    height: 550px; /* Set a fixed height to keep the cards consistent */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1.5px solid white;
+    padding: 10px;
+    transition: transform 0.3s;
+    background-color: black;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.game-card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    cursor: pointer;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 250px; /* Ensure image container has a fixed height */
+    overflow: hidden; /* Ensures image doesn't overflow */
+}
+
+.game-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgb(0, 0, 0);
+    color: #AB96FF;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.6s;
+    transform: translateY(50px);
+}
+
+.description p{
+    font-family: Poppins, serif;
+    font-size: 15px;
+}
+
+.game-card h5{
+    font-family: Poppins, serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.game-card:hover .description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 30px 15px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: Sora;
+    font-weight: bold;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Hover Effects for Titles */
+.hover-title {
+    color: #ab96ff;
+    transition: color 0.3s;
+}
+
+.hover-title:hover {
+    color: #ab96ff;
+}
+
+.footer-logo img {
+    height: 50px; /* Adjust logo size */
+  }
+  
+  .footer-logo p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #d3d3d3; /* Subtle text color */
+  }
+  
+  .footer-links h4,
+  .footer-contact h4 {
+    font-size: 18px;
+    color: #AB96FF; /* Highlight heading */
+    margin-bottom: 10px;
+  }
+
+
+/* Shop Intro */
+.shop-intro {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+}
+
+.shop-intro h1 {
+    font-size: 32px;
+}
+
+.shop-intro p {
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    padding: 20px;
+}
+
+.product-item {
+    border: 2px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    background-color: black;
+}
+
+.product-item img:hover{
+    transform: scale(1.1); /* Enlarges the image by 20% */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+.product-item p {
+    font-size: 18px;
+}
+
+.product-item h2 {
+    font-size: 18px;
+}
+
+
+.product-item button {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.product-item button:hover {
+    background-color: #45a049;
+}
+
+
+/* News Page Styles */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+}
+.nav-links {
+    display: flex;
+    gap: 15px;
+  }
+.nav-links li a:hover {
+    color: #AB96FF;
+} 
+
+
+article {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #421B7B;
+    border-radius: 5px;
+    background-color: #421B7B;
+}
+
+article h2 {
+    color: #333;
+}
+
+article p {
+    color: white;
+}
+
+h1:hover{
+    transform: scale(1.1); /* Enlarges the image by 20% */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+    cursor: pointer;
+}
+
+
+/* Form Styles */
+form {
+    margin-top: 20px;
+    background-color: #000000;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #AB96FF;
+    max-width: 600px; /* Limit the width of the form */
+    margin-left: auto; /* Center the form horizontally */
+    margin-right: auto
+}
+
+form label {
+    display:block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #AB96FF;
+    border-radius: 10px;
+}
+
+form button {
+    background-color: #AB96FF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: white;
+    color: #000000;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 30px 15px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: Sora;
+    font-weight: bold;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Hover Effects for Titles */
+.hover-title {
+    color: #ab96ff;
+    transition: color 0.3s;
+}
+
+.hover-title:hover {
+    color: #ab96ff;
+}
+
+.footer-logo img {
+    height: 50px; /* Adjust logo size */
+  }
+  
+  .footer-logo p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #d3d3d3; /* Subtle text color */
+  }
+  
+  .footer-links h4,
+  .footer-contact h4 {
+    font-size: 18px;
+    color: #AB96FF; /* Highlight heading */
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #AB96FF; /* Highlight link on hover */
+  }
+  
+  .footer-contact p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .social-icons a img {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons a:hover img {
+    transform: scale(1.2); /* Enlarge on hover */
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #d3d3d3; /* Subtle text */
+  }
