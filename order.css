@@ -1,0 +1,459 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo-image:hover {
+  transform: scale(1.1); /* Enlarges the image */
+  transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+html {
+  font-family: Poppins, sans-serif;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between; /* This creates the three sections */
+  align-items: center;
+  background-color: #000;
+  padding: 10px 20px;
+  position: relative;
+  max-width: 1200px; /* Optional: limit max width */
+  margin: 0 auto; /* Center the nav if it has max-width */
+}
+
+.logo {
+  flex: 0 0 auto; /* Don't grow or shrink */
+}
+
+.logo-image {
+  height: 40px;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  flex: 1; /* Take up available space */
+  justify-content: center; /* Center the links */
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ab96ff;
+  transform: scale(1.1);
+}
+
+/* Cart Icon Styles */
+.cart-icon {
+  position: relative;
+  margin-left: 1rem;
+}
+
+.cart-icon a {
+  display: flex;
+  align-items: center;
+}
+
+.cart-icon svg {
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+
+.cart-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #ab96ff;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.cart-icon a:hover svg {
+  color: #ab96ff;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+  display: none; /* Hidden by default on desktop */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1001;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .hamburger {
+      display: block;
+  }
+  
+  .nav-links {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 70%;
+      height: 100vh;
+      background-color: #000;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      transition: right 0.3s ease;
+      z-index: 1000;
+      padding-top: 80px;
+  }
+  
+  .nav-links.active {
+      right: 0;
+  }
+  
+  .hamburger.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .hamburger.active span:nth-child(2) {
+      opacity: 0;
+  }
+  
+  .hamburger.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px);
+  }
+  
+  .cart-icon {
+      margin-left: 0;
+  }
+}
+
+header {
+  background-color: #000;
+  padding: 5px 0;
+}
+/* Main Content Styles */
+main {
+  padding: 30px 0;
+}
+body {
+  font-family: Poppins, serif;
+  font-size: 18px;
+  margin: 0px;
+  padding: 0px;
+  background-color: #000000;
+  color: black;
+  overflow-x: hidden; /* Prevents horizontal scroll */
+  text-align: center;
+}
+
+h2 {
+  color: #AB96FF;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* Order Summary Styles */
+
+.container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: black; /* or white depending on background */
+}
+
+.order-summary, .customer-info {
+  margin-bottom: 2rem;
+  background-color: #111;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.order-summary h2, .customer-info h2 {
+  margin-bottom: 1rem;
+  color: #ab96ff;
+}
+.order-summary {
+  margin-bottom: 40px;
+}
+
+.order-items {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #AB96FF;
+  color: white;
+}
+
+tfoot td {
+  font-weight: 600;
+}
+
+/* Form Styles */
+.customer-info {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #AB96FF;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Button Styles */
+#pay-button {
+  background-color: #AB96FF;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+#card-details {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.half-width {
+  flex: 1;
+}
+
+input[type="text"][maxlength="19"],
+input[type="text"][maxlength="5"],
+input[type="text"][maxlength="3"] {
+  font-family: monospace;
+}
+#pay-button:hover {
+  background-color: #9a85e6;
+}
+
+/* Confirmation Message */
+#confirmation-message {
+  text-align: center;
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+}
+
+#confirmation-message h2 {
+  color: #AB96FF;
+  margin-bottom: 15px;
+}
+
+#confirmation-message p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+#delivery-date {
+  font-weight: 600;
+}
+
+.back-to-shop {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #AB96FF;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-shop:hover {
+  background-color: #9a85e6;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 30px 15px;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-family: Sora;
+  font-weight: bold;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Hover Effects for Titles */
+.hover-title {
+  color: #ab96ff;
+  transition: color 0.3s;
+}
+
+.hover-title:hover {
+  color: #ab96ff;
+}
+
+.footer-logo img {
+  height: 50px; /* Adjust logo size */
+}
+
+.footer-logo p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #d3d3d3; /* Subtle text color */
+}
+
+.footer-links h4,
+.footer-contact h4 {
+  font-size: 18px;
+  color: #AB96FF; /* Highlight heading */
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 5px 0;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links ul li a:hover {
+  color: #AB96FF; /* Highlight link on hover */
+}
+
+.footer-contact p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.social-icons a img {
+  width: 24px;
+  height: 24px;
+  margin: 0 5px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.2); /* Enlarge on hover */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #d3d3d3; /* Subtle text */
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav {
+      float: none;
+      margin-top: 15px;
+  }
+  
+  nav ul li {
+      display: block;
+      margin: 10px 0;
+  }
+}

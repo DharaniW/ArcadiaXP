@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo-image:hover {
+    transform: scale(1.1); /* Enlarges the image */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+html {
+    font-family: Poppins, sans-serif;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* This creates the three sections */
+    align-items: center;
+    background-color: #000;
+    padding: 10px 20px;
+    position: relative;
+    max-width: 1200px; /* Optional: limit max width */
+    margin: 0 auto; /* Center the nav if it has max-width */
+}
+
+.logo {
+    flex: 0 0 auto; /* Don't grow or shrink */
+}
+
+.logo-image {
+    height: 40px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    flex: 1; /* Take up available space */
+    justify-content: center; /* Center the links */
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ab96ff;
+    transform: scale(1.1);
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none; /* Hidden by default on desktop */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: #000;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        transition: right 0.3s ease;
+        z-index: 1000;
+        padding-top: 80px;
+    }
+    
+    .nav-links.active {
+        right: 0;
+    }
+    
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+    
+}
+
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: #000;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        transition: right 0.3s ease;
+        z-index: 1000;
+        padding-top: 80px;
+    }
+    
+    .nav-links.active {
+        right: 0;
+    }
+    
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+    
+    .cart-icon {
+        margin-left: 0;
+    }
+}
+
+header {
+    background-color: #000;
+    padding: 5px 0;
+}
+
+body {
+    font-family: Poppins, serif;
+    font-size: 18px;
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+    text-align: center;
+}
+.main-content {
+    width: 80%; /* Limit the width */
+    max-width: 1200px; /* Max width to keep it from becoming too wide */
+    margin: 0 auto; /* Center the content */
+}
+
+.faq-container {
+    width: 80%;
+    margin: auto;
+    font-family: Sora, sans-serif;
+}
+
+.faq-item {
+    width: 100%;
+    max-width: 600px; /* Set the max width to match the FAQ box size */
+    margin: 20px auto; /* Center each FAQ item */
+    border-bottom: 1px solid #ccc; /* Apply border at the bottom */
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    max-width: 600px; /* Centers the question within the page */
+    margin: 0 auto; /* Centers the question button */
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    font-size: 16px;
+    color: #d3d3d3;
+    max-width: 600px; /* Centers the answer */
+    margin: 0 auto; /* Centers the answer */
+    transition: max-height 0.3s ease-in-out;
+}
+
+
+.arrow {
+    transition: transform 0.3s ease;
+    color: #AB96FF;
+}
+
+/* Rotating arrow when active */
+.faq-item.active .arrow {
+    transform: rotate(180deg);
+}
+
+/* Hover Effects for Titles */
+.hover-title {
+    color: #ab96ff;
+    transition: color 0.3s;
+}
+
+.hover-title:hover {
+    color: #ffffff;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 30px 15px;
+    background-color: #000;
+    color: white;
+    width: 100%;
+    font-family: Sora, sans-serif;
+    font-weight: bold;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around; /* Evenly spaces items */
+    align-items: center;
+    flex-wrap: wrap; /* Ensures proper wrapping on smaller screens */
+    padding: 20px 0;
+}
+
+.footer-logo img {
+    height: 50px;
+}
+
+.footer-logo p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #d3d3d3;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+    font-size: 18px;
+    color: #AB96FF;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #AB96FF;
+}
+
+.footer-contact p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #d3d3d3;
+}
+
+/* Fix form issue */
+form {
+    margin-top: 20px;
+    background-color: #000000;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #AB96FF;
+    max-width: 600px; /* Limit the width of the form */
+    margin-left: auto; /* Center the form horizontally */
+    margin-right: auto
+}
+
+form label {
+    display:block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #AB96FF;
+    border-radius: 10px;
+}
+
+form button {
+    background-color: #AB96FF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: white;
+    color: #000000;
+}
+
+
+
+
+

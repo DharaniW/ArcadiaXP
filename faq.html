@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="faq.css">
+    <title>Queries and FAQ - Gaming Retailer</title>
+</head>
+<body>
+  <header>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="Gaming Retailer Logo" class="logo-image">
+            </a>
+        </div>
+        <!-- Hamburger Menu Button (Mobile Only) -->
+        <button class="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+      </button>
+        
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="upcoming.html">Upcoming Games</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="faq.html">Queries and FAQ</a></li>
+        </ul>
+    </nav>
+</header></br>
+</br>
+    <main-content>
+      <h1 class="hover-title">Frequently Asked Questions</h1></br></br>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          What are your store hours?
+            <span class="arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+          Our store is open from 9 AM to 9 PM, Monday to Saturday.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Do you offer online shopping?
+          <span class="arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+          Yes, you can browse and purchase games online through our website.
+        </div>
+      </div>
+  
+      <div class="faq-item">
+        <button class="faq-question">
+          Do you sell games for all platforms?
+          <span class="arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+          Yes, we sell games for PC, PlayStation, Xbox, and Nintendo Switch. Check the product details to ensure compatibility.
+        </div>
+      </div>
+  
+      <div class="faq-item">
+        <button class="faq-question">
+          Are your products genuine?
+          <span class="arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+          Absolutely! We only sell authentic products from trusted brands and developers.
+        </div>
+      </div>
+  
+      <div class="faq-item">
+        <button class="faq-question">
+          What payment methods do you accept?
+          <span class="arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+          We accept credit/debit cards, digital wallets (e.g., PayPal, Google Pay), and bank transfers.
+        </div>
+      </div>
+  
+      <div class="faq-item">
+        <button class="faq-question">
+          What is your return policy?
+          <span class="arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+          We accept returns within 7 days of purchase with a valid receipt.
+        </div>
+      </div>
+    </br>
+    <h1 class="hover-title">Ask Us a Question</h1></br>
+
+<form id="questionForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="question">Your Question:</label>
+    <textarea id="question" name="question" required></textarea></br>
+
+    <button type="submit">Submit</button>
+</form>
+
+<!-- Success message -->
+<div id="successMessage" style="display: none; color: whitesmoke;">
+    <p>Thank you for your question! We will get back to you shortly.</p>
+</div>
+
+<div id="errorMessage" style="display: none; color: whitesmoke;">
+    <p>Oops! Something went wrong. Please try again later.</p>
+</div>
+
+    
+    <div id="responseMessage"></div> <!-- To show a message after submission -->
+        <!-- Developer comments: This section allows users to submit their questions -->
+    </br></br></br></br>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+              <img src="logo.png" alt="ArcadiaXP Logo" />
+              <p>Level up your gaming experience with ArcadiaXP!</p>
+            </div>
+            <div class="footer-links">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="upcoming.html">Upcoming Games</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="footer-contact">
+              <h4>Contact Us</h4>
+              <p>Email: support@arcadiaxp.com</p>
+              <p>Phone: +123 456 7890</p>
+              <p>Address: 123 Gaming Street, AR City, Colombo 07</p>
+              <div class="social-icons">
+                <a href="#"><img src="facebook.png" alt="Facebook" /></a>
+                <a href="#"><img src="twitter.png" alt="Twitter" /></a>
+                <a href="#"><img src="instagram.png" alt="Instagram" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2025 ArcadiaXP. All Rights Reserved.</p>
+          </div>
+        </footer>
+        <script src="faq.js"></script>   
+    </body>
+    </html>

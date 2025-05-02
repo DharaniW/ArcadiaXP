@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Your Dream PC</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="shop.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Gaming Retailer Logo" class="logo-image">
+                </a>
+            </div>
+            <!-- Hamburger Menu Button (Mobile Only) -->
+            <button class="hamburger" aria-label="Menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="upcoming.html">Upcoming Games</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="faq.html">Queries and FAQ</a></li>
+            </ul>
+        </nav>
+    </header></br>
+
+    <main class="container">
+        <section class="product-categories">
+            <!-- Processors -->
+            <div class="category">
+                <h2><i class="fas fa-microchip"></i> Processors (CPU)</h2>
+                <div class="products">
+                    <div class="product" data-id="cpu1" data-name="Ryzen 3 3200G" data-price="$65.00">
+                        <img src="processor1.jpg" alt="Ryzen 3 3200G">
+                        <h3>Ryzen 3 3200G</h3>
+                        <p class="price">$65.00</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product" data-id="cpu2" data-name="Ryzen 5 3400G" data-price="$83.33">
+                        <img src="processor2.jpg" alt="Ryzen 5 3400G">
+                        <h3>Ryzen 5 3400G</h3>
+                        <p class="price">$83.33</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product" data-id="cpu3" data-name="Ryzen 5 5500" data-price="$108.33">
+                        <img src="processor3.jpg" alt="Ryzen 5 5500">
+                        <h3>Ryzen 5 5500</h3>
+                        <p class="price">$108.33</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+                    <div class="product" data-id="cpu4" data-name="Core i3-4170" data-price="$9.50">
+                        <img src="processor4.jpg" alt="Core i3-4170">
+                        <h3>Core i3-4170</h3>
+                        <p class="price">$9.50</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+                    <div class="product" data-id="cpu5" data-name="Core i5-10400" data-price="$131.67">
+                        <img src="processor5.jpg" alt="Core i5-10400">
+                        <h3>Core i5-10400</h3>
+                        <p class="price">$131.67</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+                    <div class="product" data-id="cpu6" data-name="Core i7-14700K" data-price="$400.00">
+                        <img src="processor6.jpg" alt="Core i7-14700K">
+                        <h3>Core i7-14700K</h3>
+                        <p class="price">$400.00</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+                    <div class="product" data-id="cpu7" data-name="Core i9-9900K" data-price="$120.00">
+                        <img src="processor7.jpg" alt="Core i9-9900K">
+                        <h3>Core i9-9900K</h3>
+                        <p class="price">$120.00</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+                    <div class="product" data-id="cpu8" data-name="Core Ultra 7" data-price="$400.00​">
+                        <img src="processor8.gif" alt="Core Ultra 7">
+                        <h3>Core Ultra 7</h3>
+                        <p class="price">$400.00​</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Graphics Cards -->
+            <div class="category">
+                <h2><i class="fas fa-gamepad"></i> Graphics Cards (GPU)</h2>
+                <div class="products">
+                    <div class="product" data-id="gpu1" data-name="RTX 5090 SUPRIM " data-price="$3,498.33">
+                        <img src="gpu1.gif" alt="RTX 5090 SUPRIM">
+                        <h3>RTX 5090 SUPRIM</h3>
+                        <p class="price">$3,498.33</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product" data-id="gpu2" data-name="AMD Radeon RX 7900 XTX" data-price="999.99">
+                        <img src="gpu2.gif" alt="AMD Radeon RX 7900 XTX">
+                        <h3>AMD Radeon RX 7900 XTX</h3>
+                        <p class="price">$999.99</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product" data-id="gpu3" data-name="NVIDIA RTX 4080" data-price="1199.99">
+                        <img src="gpu3.jpg" alt="NVIDIA RTX 4080">
+                        <h3>NVIDIA RTX 4080</h3>
+                        <p class="price">$1199.99</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+
+                    <div class="product" data-id="gpu4" data-name="Dual GeForce RTX 4060" data-price="466.67">
+                        <img src="gpu4.jpg" alt="Dual GeForce RTX 4060">
+                        <h3>Dual GeForce RTX 4060</h3>
+                        <p class="price">$466.67</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+
+                    <div class="product" data-id="gpu5" data-name="GeForce RTX™ 5090" data-price="1999.99">
+                        <img src="gpu6.jpg" alt="GeForce RTX™ 5090">
+                        <h3>GeForce RTX™ 5090</h3>
+                        <p class="price">$1999.99</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+
+                    <div class="product" data-id="gpu6" data-name="NVIDIA RTX 4080" data-price="$60.00">
+                        <img src="gpu7.jpg" alt="NVIDIA RTX 4080">
+                        <h3>MSI GeForce GT 710</h3>
+                        <p class="price">$60.00</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+
+                    <div class="product" data-id="gpu7" data-name="RTX 5070 Ventus" data-price="$831.67">
+                        <img src="gpu8.jpg" alt="RTX 5070 Ventus">
+                        <h3>RTX 5070 Ventus</h3>
+                        <p class="price">$831.67</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+
+                    <div class="product" data-id="gpu8" data-name="ASUS Dual GeForce RTX" data-price="$466.67">
+                        <img src="gpu5.jpg" alt="ASUS Dual GeForce RTX">
+                        <h3>ASUS Dual GeForce RTX</h3>
+                        <p class="price">$466.67</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <!-- Motherboards -->
+            <div class="category">
+                <h2><i class="fas fa-project-diagram"></i> Motherboards</h2>
+                <div class="products">
+                    <div class="product" data-id="mb1" data-name="ASUS ROG Maximus Z790" data-price="499.99">
+                        <img src="mb1.jpg" alt="ASUS ROG Maximus Z790">
+                        <h3>ASUS ROG Maximus Z790</h3>
+                        <p class="price">$499.99</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product" data-id="mb2" data-name="MSI MPG X670E Carbon" data-price="449.99">
+                        <img src="mb2.jpg" alt="MSI MPG X670E Carbon">
+                        <h3>MSI MPG X670E Carbon</h3>
+                        <p class="price">$449.99</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product" data-id="mb3" data-name="Gigabyte B650 AORUS Elite" data-price="219.99">
+                        <img src="mb3.gif" alt="Gigabyte B650 AORUS Elite">
+                        <h3>Gigabyte B650 AORUS Elite</h3>
+                        <p class="price">$219.99</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+
+                    <div class="product" data-id="mb3" data-name="Gigabyte B650 AORUS Elite" data-price="219.99">
+                        <img src="mb4.jpg" alt="Gigabyte B650 AORUS Elite">
+                        <h3>Gigabyte B650 AORUS Elite</h3>
+                        <p class="price">$219.99</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+
+                    <div class="product" data-id="mb3" data-name="Gigabyte B650 AORUS Elite" data-price="219.99">
+                        <img src="mb5.jpg" alt="Gigabyte B650 AORUS Elite">
+                        <h3>Gigabyte B650 AORUS Elite</h3>
+                        <p class="price">$219.99</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+
+                    <div class="product" data-id="mb3" data-name="Gigabyte B650 AORUS Elite" data-price="219.99">
+                        <img src="mb6.jpg" alt="Gigabyte B650 AORUS Elite">
+                        <h3>Gigabyte B650 AORUS Elite</h3>
+                        <p class="price">$219.99</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+
+                    <div class="product" data-id="mb3" data-name="Gigabyte B650 AORUS Elite" data-price="219.99">
+                        <img src="mb7.jpg" alt="Gigabyte B650 AORUS Elite">
+                        <h3>Gigabyte B650 AORUS Elite</h3>
+                        <p class="price">$219.99</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+
+                    <div class="product" data-id="mb3" data-name="Gigabyte B650 AORUS Elite" data-price="219.99">
+                        <img src="mb8.gif" alt="Gigabyte B650 AORUS Elite">
+                        <h3>Gigabyte B650 AORUS Elite</h3>
+                        <p class="price">$219.99</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- RAM -->
+            <div class="category">
+                <h2><i class="fas fa-memory"></i> Memory (RAM)</h2>
+                <div class="products">
+                    <div class="product" data-id="ram1" data-name="Corsair Dominator 32GB DDR5" data-price="199.99">
+                        <img src="ram1.jpg" alt="Corsair Dominator 32GB DDR5">
+                        <h3>Corsair Dominator 32GB DDR5</h3>
+                        <p class="price">$199.99</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product" data-id="ram2" data-name="G.Skill Trident Z5 RGB 64GB" data-price="299.99">
+                        <img src="ram2.png" alt="G.Skill Trident Z5 RGB 64GB">
+                        <h3>G.Skill Trident Z5 RGB 64GB</h3>
+                        <p class="price">$299.99</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product" data-id="ram3" data-name="Kingston Fury Beast 16GB DDR4" data-price="59.99">
+                        <img src="ram3.png" alt="Kingston Fury Beast 16GB DDR4">
+                        <h3>Kingston Fury Beast 16GB DDR4</h3>
+                        <p class="price">$59.99</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+
+                    <div class="product" data-id="ram3" data-name="Kingston Fury Beast 16GB DDR4" data-price="59.99">
+                        <img src="ram4.jpg" alt="Kingston Fury Beast 16GB DDR4">
+                        <h3>Kingston Fury Beast 16GB DDR4</h3>
+                        <p class="price">$59.99</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Storage -->
+            <div class="category">
+                <h2><i class="fas fa-hdd"></i> Storage Devices</h2>
+                <div class="products">
+                    <div class="product" data-id="hdd1" data-name="Samsung 970 EVO Plus" data-price="129.99">
+                        <img src="storagedrive.jpg" alt="Samsung 970 EVO Plus">
+                        <h3>Samsung 970 EVO Plus</h3>
+                        <p class="price">$129.99</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product" data-id="hdd2" data-name="Seagate Backup Plus" data-price="159.99">
+                        <img src="storagedrive2.jpg" alt="Seagate Backup Plus">
+                        <h3>Seagate Backup Plus</h3>
+                        <p class="price">$159.99</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product" data-id="hdd3" data-name="Western Digital Blue" data-price="32.70">
+                        <img src="flashdrive1.gif" alt="Western Digital Blue">
+                        <h3>Western Digital Blue</h3>
+                        <p class="price">$32.70</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+
+                    <div class="product" data-id="hdd4" data-name="Seagate IronWolf 8TB HDD" data-price="149.99">
+                        <img src="harddrive1.jpg" alt="Seagate IronWolf 8TB HDD">
+                        <h3>Seagate IronWolf 8TB HDD</h3>
+                        <p class="price">$149.99</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+
+                    <div class="product" data-id="hdd5" data-name="Seagate Barracuda 1TB" data-price="31.69">
+                        <img src="harddrive2.jpg" alt="Seagate Barracuda 1TB">
+                        <h3>Seagate Barracuda 1TB</h3>
+                        <p class="price">$31.69</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+
+                    <div class="product" data-id="hdd6" data-name="ADATA UV128" data-price="9.99">
+                        <img src="pen.jpg" alt="ADATA UV128">
+                        <h3>ADATA UV128</h3>
+                        <p class="price">$9.99</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+
+                    <div class="product" data-id="hdd7" data-name="Netac P500 Standard" data-price="11.95">
+                        <img src="microsdq.png" alt="Netac P500 Standard">
+                        <h3>Netac P500 Standard</h3>
+                        <p class="price">$11.95</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+
+                    <div class="product" data-id="hdd8" data-name="Crucial MX500 SATA" data-price="50.00">
+                        <img src="solidstatedrive.png" alt="Crucial MX500 SATA">
+                        <h3>Crucial MX500 SATA</h3>
+                        <p class="price">$50.00</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" value="0" class="quantity">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cart-section">
+            <h2><i class="fas fa-shopping-cart"></i> Your Cart</h2>
+            <div class="cart-table-container">
+                <table id="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Qty</th>
+                            <th>Price</th>
+                            <th>Total</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Cart items will be inserted here by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="cart-summary">
+                <div class="subtotal">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">$0.00</span>
+                </div>
+                
+                <div class="cart-buttons">
+                    <button id="buy-now" class="btn-primary">
+                        <i class="fas fa-credit-card"></i> Buy Now
+                    </button>
+                    <button id="add-to-favorites" class="btn-secondary">
+                        <i class="fas fa-heart"></i> Add to Favourites
+                    </button>
+                    <button id="apply-favorites" class="btn-secondary">
+                        <i class="fas fa-magic"></i> Load Favourites 
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+              <img src="logo.png" alt="ArcadiaXP Logo" />
+              <p>Level up your gaming experience with ArcadiaXP!</p>
+            </div>
+            <div class="footer-links">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="upcoming.html">Upcoming Games</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="footer-contact">
+              <h4>Contact Us</h4>
+              <p>Email: support@arcadiaxp.com</p>
+              <p>Phone: +123 456 7890</p>
+              <p>Address: 123 Gaming Street, AR City, Colombo 07</p>
+              <div class="social-icons">
+                <a href="#"><img src="facebook.png" alt="Facebook" /></a>
+                <a href="#"><img src="twitter.png" alt="Twitter" /></a>
+                <a href="#"><img src="instagram.png" alt="Instagram" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2025 ArcadiaXP. All Rights Reserved.</p>
+          </div>
+        </footer>
+    <script src="shop.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - TechParts</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="order.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Gaming Retailer Logo" class="logo-image">
+                </a>
+            </div>
+            
+            <!-- Hamburger Menu Button (Mobile Only) -->
+            <button class="hamburger" aria-label="Menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="upcoming.html">Upcoming Games</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="faq.html">Queries and FAQ</a></li>
+                <li class="cart-icon">
+                    <a href="shop.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header></br>
+
+    <main class="container">
+        <section id="confirmation-message">
+            <h2>Thank You for Your Purchase!</h2>
+            <p>Your order has been placed successfully.</p>
+            <p>An email confirmation has been sent to <span id="customer-email"></span>.</p>
+            <p>Expected delivery date: <span id="delivery-date"></span></p>
+            <a href="shop.html" class="back-to-shop">Back to Shop</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+              <img src="logo.png" alt="ArcadiaXP Logo" />
+              <p>Level up your gaming experience with ArcadiaXP!</p>
+            </div>
+            <div class="footer-links">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="upcoming.html">Upcoming Games</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="footer-contact">
+              <h4>Contact Us</h4>
+              <p>Email: support@arcadiaxp.com</p>
+              <p>Phone: +123 456 7890</p>
+              <p>Address: 123 Gaming Street, AR City, Colombo 07</p>
+              <div class="social-icons">
+                <a href="#"><img src="facebook.png" alt="Facebook" /></a>
+                <a href="#"><img src="twitter.png" alt="Twitter" /></a>
+                <a href="#"><img src="instagram.png" alt="Instagram" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2025 ArcadiaXP. All Rights Reserved.</p>
+          </div>
+        </footer>   
+
+    <script src="thankyou.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation - TechParts</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="order.css">
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Gaming Retailer Logo" class="logo-image">
+                </a>
+            </div>
+            
+            <!-- Hamburger Menu Button (Mobile Only) -->
+            <button class="hamburger" aria-label="Menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="upcoming.html">Upcoming Games</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="faq.html">Queries and FAQ</a></li>
+                <li class="cart-icon">
+                    <a href="shop.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header></br>
+    <main class="container">
+        <section class="order-summary">
+            <h2>Your Order Summary</h2>
+            <div class="order-items">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Qty</th>
+                            <th>Price</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="order-items">
+                        <!-- Order items will be inserted here by JavaScript -->
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Subtotal</td>
+                            <td id="order-subtotal">$0.00</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Shipping</td>
+                            <td>$10.00</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Total</td>
+                            <td id="order-total">$0.00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+
+        <section class="customer-info">
+            <h2>Customer Information</h2>
+            <form id="order-form">
+                <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">Shipping Address</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="payment">Payment Method</label>
+                    <select id="payment" name="payment" required>
+                        <option value="">Select payment method</option>
+                        <option value="credit">Credit Card</option>
+                        <option value="debit">Debit Card</option>
+                    </select>
+                </div>
+
+                <div id="card-details" class="hidden">
+                  <div class="form-group">
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" maxlength="19">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="card-name">Name on Card</label>
+                    <input type="text" id="card-name" name="card-name" placeholder="John Doe">
+                  </div>
+                  
+                  <div class="form-row">
+                    <div class="form-group half-width">
+                      <label for="card-expiry">Expiry Date</label>
+                      <input type="text" id="card-expiry" name="card-expiry" placeholder="MM/YY" maxlength="5">
+                    </div>
+                    
+                    <div class="form-group half-width">
+                      <label for="card-cvv">CVV</label>
+                      <input type="text" id="card-cvv" name="card-cvv" placeholder="123" maxlength="3">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" id="pay-button">Pay Now</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+              <img src="logo.png" alt="ArcadiaXP Logo" />
+              <p>Level up your gaming experience with ArcadiaXP!</p>
+            </div>
+            <div class="footer-links">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="upcoming.html">Upcoming Games</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="footer-contact">
+              <h4>Contact Us</h4>
+              <p>Email: support@arcadiaxp.com</p>
+              <p>Phone: +123 456 7890</p>
+              <p>Address: 123 Gaming Street, AR City, Colombo 07</p>
+              <div class="social-icons">
+                <a href="#"><img src="facebook.png" alt="Facebook" /></a>
+                <a href="#"><img src="twitter.png" alt="Twitter" /></a>
+                <a href="#"><img src="instagram.png" alt="Instagram" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2025 ArcadiaXP. All Rights Reserved.</p>
+          </div>
+        </footer> 
+        <script src="order.js"></script>  
+    </body>
+    </html>
+
